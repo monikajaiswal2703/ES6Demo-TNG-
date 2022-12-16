@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let id = Symbol("Hello");
+        let age=Symbol("age");
+        let user = {
+            name:"monika",
+            class:"Bsc",
+        };
+        user[age]=25;
+        user["gender"]='female'
+
+        console.log(user);
+
+        console.log(JSON.stringify(user))
+
+        // console.log(user.class);
+        // console.log(user[age]);
+        // console.log(id);
+        // console.log(id.description);
+        // document.write(id.description)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

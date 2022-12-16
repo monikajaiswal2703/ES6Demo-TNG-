@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advance JS</title>
+    <script>
+        function numberIterator(arr){
+            var nextNum = 0;
+            return{
+                next(){
+                    if (nextNum < arr.lenght){
+                        return{
+                            value:arr[nextNum++],
+                            done:false
+                        }
+                    }// }else{
+                    //     return{
+                    //         done:true
+                    //     }
+                    // }
+                }
+            }
+        }
+        
+        let numbers=[12,22,33,45];
+        // let iter = numbers[Symbol.iterator]();
+        // let result=iter.next();
+
+        // while(!result.done){
+        //     console.log(result.value);
+        //     result=iter.next();
+        // }
+
+
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+
+
+        let num = numberIterator(numbers);
+        console.log(num.next());
+        console.log(num.next());
+        // console.log(num.next());
+        // console.log(num.next());
+        // console.log(num.next());
+        // console.log(num.next());
+
+
+
+        // var str=["apple","orange","banana","chiku"];
+
+        // let iter=str[Symbol.iterator]();
+
+        // let result=iter.next();
+
+        // while(!result.done){
+        //     console.log(result.value);
+        //     result=iter.next();
+        // }
+
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // let y=x[Symbol.iterator]();
+        // y.next();
+        // y.next();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

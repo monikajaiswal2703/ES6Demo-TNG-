@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator A_JS</title>
+    <script>
+        function *generateit(){
+            yield 55;
+            yield*['Node','Angular','React'];
+            // let yA=[yield,yield,yield];
+            // console.log(`Result:${yA}`);
+
+            // let nextNum=300;
+            // while (true){
+            //     yield (nextNum++);
+            // }
+
+
+            // console.log('1 st msj')
+            // yield 'Yield no. 1'
+            // // console.log('2 nd msj')
+            // yield 'Yield no. 2'
+            // yield 'Yield no. 3'
+        }
+
+        let g=generateit();
+        // g.next();
+        // g.next("Python, js, HTML");
+        // g.next(600);
+        // g.next(700);
+
+
+        // for (let value of g){
+        //     if (value>3015)break;
+        //     console.log(value);
+        // }
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

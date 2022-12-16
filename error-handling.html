@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        try{
+            let json='{"name":"mona","age":22}';
+            let user = JSON.parse(json);
+
+            if(!user.name){
+                throw new Error("Incomplete data: No name");
+
+            }
+            console.log(user.city);
+            console.log(user.name);
+            console.log(user.age);
+            // console.log(user.city);
+        }catch(e){
+            console.log(e);
+        } finally{
+            console.log('Thanks');
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

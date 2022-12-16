@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async_await Method</title>
+    <script>
+        async function test(){
+        return (await fetch("student.json")).json();
+            // console.log("2 : Message");
+            // await console.log("3 : Message");
+            // console.log("4 : Message");
+        }
+
+        test().then((res) =>{
+            console.log(res);
+        }).catch((error)=> {
+            console.log(error);
+        });
+
+        // console.log("1 : Message");
+        // test()
+        // console.log("5 : Message");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
